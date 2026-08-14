@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  background: #1f2937;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #d1d5db;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+  background: white;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  color: #1f2937;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+nav button:hover {
+  background: #e5e7eb;
+}
+
+nav button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================= MAIN ================= */
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ================= CARDS ================= */
+
+.form-card,
+.table-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2,
+.table-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+/* ================= FORM ================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  background-color: white;
+  color: #1f2937;
+
+  outline: none;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  border: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.secondary:hover {
+  background: #4b5563;
+}
+
+.edit {
+  background: #f59e0b;
+  color: white;
+}
+
+.edit:hover {
+  background: #d97706;
+}
+
+.delete {
+  background: #dc2626;
+  color: white;
+}
+
+.delete:hover {
+  background: #b91c1c;
+}
+
+/* ================= TABLE ================= */
+
+.table-card {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    padding: 12px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
