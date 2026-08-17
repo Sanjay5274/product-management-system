@@ -1,11 +1,9 @@
-package com.example.productmanagement.config;
+package com.productmanagement.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-package com.productmanagement;
-package com.productmanagement.config;
 
 @Configuration
 public class CorsConfig {
