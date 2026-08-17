@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "http://product-management-api-47ko.onrender.com/api";
+const API = "https://product-management-api-47ko.onrender.com/api";
 
 function App() {
   const [activeTab, setActiveTab] = useState("products");
